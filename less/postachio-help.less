@@ -1,0 +1,36 @@
+@import 'elements.less';
+
+@black: #636363;
+@white: #ffffff;
+@red: #e16f53;
+@text: #8b8b8b;
+@lighttext: #bbbbbb;
+@hr: #f6f6f6;
+
+@gutter: 25px;
+
+ul, li, img, form,
+table, tr, td, ol, p,
+h1, h2, h3, h4 {
+    position: relative;
+    list-style-type: none;    
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+a {
+    .transition(0.2s, ease-in-out);
+}
+.ss-icon {
+    position: relative;
+    top: 2px;
+}
+
+.left { float: left; }
+.right { float: right; }
+
+@import 'modules/layout.less';
+@import 'modules/type.less';
+@import 'modules/modal.less';
+@import 'modules/form.less';
+

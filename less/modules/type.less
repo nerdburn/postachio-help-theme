@@ -1,0 +1,27 @@
+@import url(../fonts/symbolset/ss-pika.css);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+* {
+    color: @text;
+    line-height: 1.5rem;
+    font-family: 'Lato', helvetica, arial, sans-serif;
+}
+
+body {
+    font-size: 100%;
+}
+
+h1, h2, h3, h4 {
+    color: @red;
+    font-weight: bold;
+    padding: 0 0 @gutter 0;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: @text;
+    &:hover {
+        color: @red;
+    }
+}

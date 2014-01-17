@@ -7,7 +7,7 @@
 @lighttext: #bbbbbb;
 @hr: #f6f6f6;
 
-@gutter: 25px;
+@gutter: 50px;
 
 ul, li, img, form,
 table, tr, td, ol, p,
@@ -20,6 +20,9 @@ h1, h2, h3, h4 {
 }
 a {
     .transition(0.2s, ease-in-out);
+    * {
+        .transition(0.2s, ease-in-out);        
+    }
 }
 .ss-icon {
     position: relative;
@@ -31,6 +34,8 @@ a {
 
 @import 'modules/layout.less';
 @import 'modules/type.less';
-@import 'modules/modal.less';
-@import 'modules/form.less';
-
+@import 'modules/header.less';
+@import 'modules/toc.less';
+@import 'modules/footer.less';
+@import 'modules/button.less';
+@import 'modules/post.less';

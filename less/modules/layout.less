@@ -1,6 +1,14 @@
 body {
-    padding: 0 0 0 25%;
+    padding: 0;
     margin: 0;
+}
+
+.container {
+    display: block;
+    clear: both;
+    margin: 0 auto;
+    width: 60%;
+    .clearfix();
 }
 
 .rainbow {
@@ -12,89 +20,6 @@ body {
     width: 100%;
     height: 6px;
     z-index: 1000;
-}
-
-.pad {
-    padding: @gutter*4;
-}
-
-.nav {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 25%;
-    border-right: 2px solid @hr;
-    height: 100%;
-    margin: 0;
-    .box-sizing(border-box);
-    .logo-container {
-        padding: 45px 0 45px 0;
-    }    span.select-arrow {
-            color: @text;
-            position: absolute;
-            top: 12px;
-            right: 12px;
-        }
-    img.logo {
-        display: block;
-        width: 70%;
-        margin: 0 auto;
-    }
-    ul {
-        padding-top: 30px;
-        li {
-            a {
-                display: block;
-                padding: 3px 45px 3px 45px;
-                width: 100%;
-                .box-sizing(border-box);
-                &:hover,
-                &.active {
-                    background-color: @hr;
-                    color: @text;
-                }
-                
-            }
-            h4 {
-                padding: 15px 0 5px 45px;
-                margin: 0;
-                font-weight: bold;
-            }
-        }
-    }
-}
-
-ul.stats {
-    background-color: @hr;
-    .box-sizing(border-box);
-    padding-bottom: 4%;
-    margin: @gutter 0 @gutter 0;
-    li {      
-        display: block;
-        overflow: hidden;
-        float: left;
-        text-align: center;
-        font-weight: bold;
-        .box-sizing(border-box);
-        margin-top: 4%;
-        margin-left: 4%;
-        padding: @gutter;        
-        background-color: @white;
-        width: 20%;
-        span {
-            display: block;
-            clear: both;
-            &:nth-of-type(1) {
-                font-size: 2rem;
-                padding-bottom: @gutter/2;
-            }        
-            &:nth-of-type(2) {
-                font-size: 0.85rem;            
-            }
-        }
-    }
-    .clearfix();
 }
 
 .grid {
